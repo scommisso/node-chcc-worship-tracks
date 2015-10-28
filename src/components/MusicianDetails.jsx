@@ -1,7 +1,7 @@
 var React = require('react');
 var concurrent = require('contra').concurrent;
 var map = require('lodash/collection/map');
-var Router = require('react-router/build/npm/lib');
+var Router = require('react-router');
 var Link = Router.Link;
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongsByMusicianStore = require('../stores/SongsByMusicianStore');
@@ -50,22 +50,30 @@ var MusicianDetails = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>{this.state.musician}</h1>
-        <h2>Positions</h2>
-        <ul>{this.renderPositions()}</ul>
-        <h2>Songs ({this.state.songs.length})</h2>
-        <ul>{this.renderSongs()}</ul>
-      </div>
-    );
+        <div className="page-header">
+          <h1>{this.state.musician}</h1>
+          <p className="lead">
+            <em>{this.renderPositions()}</em>
+          </p>
+        </div>
+        <div className="row">
+          <div className="panel panel-default">
+            <div className="panel-heading">
+              <h3 className="panel-title">
+                Songs <span className="badge">{this.state.songs.length}</span>
+              </h3>
+            </div>
+            <div className="panel-body">
+            <ul className="list-group">{this.renderSongs()}</ul>
+            </div>
+          </div>
+        </div>
+      </div>);
   },
 
   renderPositions: function() {
     var positions = this.state.positions;
-    return map(positions, function(position) {
-      return (
-        <li key={position}>{position}</li>
-      );
-    });
+    return positions.join(', ');
   },
 
   getStyleString: function(song) {
@@ -78,7 +86,7 @@ var MusicianDetails = React.createClass({
     var getStyleString = this.getStyleString;
     return map(songs, function(song) {
       return (
-        <li key={song.id}>
+        <li className="list-group-item" key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
             {song.date} - {song.title + getStyleString(song)}
           </Link>

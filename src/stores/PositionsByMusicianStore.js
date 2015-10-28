@@ -45,6 +45,7 @@ var PositionsByMusicianStore = createStore({
 
   success: function(positions) {
     this.positions = positions;
+    this.working = false;
     this.emitChange();
   },
 

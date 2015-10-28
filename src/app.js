@@ -12,5 +12,6 @@ app.registerStore(require('./stores/SongsByTitleStore'));
 app.registerStore(require('./stores/SongsByMusicianStore'));
 app.registerStore(require('./stores/PositionsByMusicianStore'));
 app.registerStore(require('./stores/CreateSongStore'));
+app.registerStore(require('./stores/MusiciansStore'));
 
 module.exports = app;

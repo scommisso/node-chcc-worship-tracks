@@ -29,6 +29,7 @@ var SongSearchStore = createStore({
   },
 
   start: function() {
+    this.songs = null;
     this.working = true;
     this.emitChange();
   },

@@ -4,13 +4,13 @@ var toParamCase = require('change-case').paramCase;
 var Router = require('react-router');
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 
-var SongTitlesStore = require('../stores/SongTitlesStore');
-var fetchSongTitles = require('../actions/fetchSongTitles');
+var MusiciansStore = require('../stores/MusiciansStore');
+var fetchMusicians = require('../actions/fetchMusicians');
 
 var Link = Router.Link;
 var Loading = require('./Loading.jsx');
 
-var SongList = React.createClass({
+var Musicians = React.createClass({
   contextTypes: {
     router: React.PropTypes.func.isRequired
   },
@@ -18,10 +18,10 @@ var SongList = React.createClass({
   mixins: [FluxibleMixin],
 
   statics: {
-    storeListeners: [SongTitlesStore],
+    storeListeners: [MusiciansStore],
 
     fetchData: function(context, params, query, done) {
-      context.executeAction(fetchSongTitles, {}, done);
+      context.executeAction(fetchMusicians, {}, done);
     }
   },
 
@@ -31,8 +31,8 @@ var SongList = React.createClass({
 
   getStateFromStores: function () {
     return {
-      songTitles: this.getStore(SongTitlesStore).getSongTitles(),
-      loading: this.getStore(SongTitlesStore).isLoading()
+      musicians: this.getStore(MusiciansStore).getMusicians(),
+      loading: this.getStore(MusiciansStore).isLoading()
     };
   },
 
@@ -50,30 +50,30 @@ var SongList = React.createClass({
   },
 
   renderData: function() {
-    var songTitles = this.state.songTitles;
-    var songCount = songTitles && songTitles.length;
+    var musicians = this.state.musicians;
+    var musicianCount = musicians && musicians.length;
     return (
       <div className="row">
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
-              <h1>Song List <span className="badge badge-lg">{songCount}</span></h1>
+              <h1>Musicians <span className="badge badge-lg">{musicianCount}</span></h1>
             </h3>
           </div>
           <div className="panel-body">
-            <ul className="list-group">{this.renderSongs(songTitles)}</ul>
+            <ul className="list-group">{this.renderMusicians(musicians)}</ul>
           </div>
         </div>
       </div>
     );
   },
 
-  renderSongs: function(songs) {
-    return map(songs, function(song) {
+  renderMusicians: function(musicians) {
+    return map(musicians, function(musician) {
       return (
-        <li className="list-group-item" key={song}>
-          <Link to="songs-by-title" params={{title: toParamCase(song.trim())}}>
-            {song}
+        <li className="list-group-item" key={musician}>
+          <Link to="musician-details" params={{musician: toParamCase(musician)}}>
+            {musician}
           </Link>
         </li>
       );
@@ -89,4 +89,4 @@ var SongList = React.createClass({
   }
 });
 
-module.exports = SongList;
+module.exports = Musicians;

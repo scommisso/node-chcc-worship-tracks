@@ -1,6 +1,6 @@
 var React = require('react');
 var map = require('lodash/collection/map');
-var Router = require('react-router/build/npm/lib');
+var Router = require('react-router');
 var Link = Router.Link;
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongStore = require('../stores/SongStore');

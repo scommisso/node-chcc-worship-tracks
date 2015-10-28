@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var serialize = require('serialize-javascript');
 var React = require('react');
-var Router = require('react-router/build/npm/lib');
+var Router = require('react-router');
 var FluxibleComponent = require('fluxible/addons/FluxibleComponent');
 var debug = require('debug')('app:server');
 var app = require('../app');
@@ -21,8 +21,8 @@ var server = express();
 server.use(bodyParser.json());
 server.use(cookieParser());
 server.use('/api', api);
-server.use('/public',
-  express.static(path.join(__dirname, '..', '..', 'build')));
+server.use('/public', express.static(path.join(__dirname, '..', '..', 'build')));
+server.use('/styles', express.static(path.join(__dirname, '..', '..', 'css')));
 
 var renderApp = function(context, location, cb) {
   var router = Router.create({

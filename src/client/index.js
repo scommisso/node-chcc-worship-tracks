@@ -1,11 +1,12 @@
 var React = require('react');
-var Router = require('react-router/build/npm/lib');
+var Router = require('react-router');
 var FluxibleComponent = require('fluxible/addons/FluxibleComponent');
 var debug = require('debug');
 var bootstrapDebug = debug('app:client');
 var app = require('../app');
 var routes = require('../routes.jsx');
 var fetchData = require('../utils/fetchData');
+require('./ie10-viewport-hack');
 
 window.React = React; // For chrome dev tool support
 debug.enable('*');

@@ -7,5 +7,6 @@ module.exports = {
   POSITIONS_BY_MUSICIAN: 'PositionsByMusicianStore',
   SONG_SEARCH: 'SongSearchStore',
   SONG: 'SongStore',
-  SONG_TITLES: 'SongTitlesStore'
+  SONG_TITLES: 'SongTitlesStore',
+  MUSICIAN: 'MusicianStore'
 };

@@ -2,9 +2,10 @@
 
 var Immutable = require('immutable');
 var uniq = require('lodash.uniq');
+var toParamCase = require('change-case').paramCase;
+var nameParser = require('another-name-parser');
 var structuredData = require('./data/structuredData');
 var Search = require('./search.js');
-var toParamCase = require('change-case').paramCase;
 
 var lastId = 0;
 Object.keys(structuredData.songsById).forEach(function (songId) {
@@ -105,9 +106,22 @@ db.getPlans = function() {
 };
 
 db.getMusicians = function() {
+  var self = this;
   return this._state.get('bandMembersByName')
     .keySeq()
-    .sort()
+    .map(function (title) {
+      var fullName = self._state.get('bandMembersByName').get(title).get(0).get('name');
+      var parsed = nameParser(fullName);
+      return { full: fullName, last: parsed.last.trim().toLowerCase(), first: parsed.first.trim().toLowerCase() };
+    })
+    .sort(function (a, b) {
+      if (a.last === b.last) {
+        if (a.first === b.first) { return 0; }
+        return a.first < b.first ? -1 : 1;
+      }
+      return a.last < b.last ? -1 : 1;
+    })
+    .map(function (n) { return n.full; })
     .toList();
 };
 

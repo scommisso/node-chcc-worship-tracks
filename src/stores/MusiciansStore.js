@@ -3,19 +3,19 @@
 var createStore = require('fluxible/addons/createStore');
 var getHandlers = require('../utils/getHandlers');
 var stores = require('../constants').STORE;
-var actions = require('../constants').ACTION.SONG_TITLES;
+var actions = require('../constants').ACTION.MUSICIANS;
 
-var SongTitlesStore = createStore({
-  storeName: stores.SONG_TITLES,
+var MusicianStore = createStore({
+  storeName: stores.MUSICIAN,
 
   handlers: getHandlers([
     [actions.FETCH_START, 'start'],
     [actions.FETCH_FAILURE, 'failure'],
-    [actions.FETCH_SUCCESS, 'success'],
+    [actions.FETCH_SUCCESS, 'success']
   ]),
 
   initialize: function() {
-    this.songTitles = [];
+    this.musicians = [];
   },
 
   start: function() {
@@ -28,14 +28,14 @@ var SongTitlesStore = createStore({
     this.emitChange();
   },
 
-  success: function(songs) {
-    this.songTitles = songs;
+  success: function(musicians) {
+    this.musicians = musicians;
     this.working = false;
     this.emitChange();
   },
 
-  getSongTitles: function() {
-    return this.songTitles;
+  getMusicians: function() {
+    return this.musicians;
   },
 
   isLoading: function() {
@@ -44,15 +44,15 @@ var SongTitlesStore = createStore({
 
   dehydrate: function() {
     return {
-      songTitles: this.songTitles,
+      musicians: this.musicians,
       working: this.working
     };
   },
 
   rehydrate: function(state) {
-    this.songTitles = state.songTitles;
+    this.musicians = state.musicians;
     this.working = state.working;
   }
 });
 
-module.exports = SongTitlesStore;
+module.exports = MusicianStore;
