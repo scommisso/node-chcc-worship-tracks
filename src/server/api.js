@@ -5,7 +5,15 @@ var db = require('./db');
 var api = express.Router();
 
 api.get('/songs', function(req, res) {
-  res.json(db.getSongs());
+  var query = req.query || {};
+  var search = query.search;
+  var exact = query.exact;
+  var limit = query.limit;
+  if (search) {
+    res.json(db.searchSongs(search, exact, limit));
+  } else {
+    res.json(db.getSongs());
+  }
 });
 
 api.get('/songTitles', function(req, res) {
@@ -24,16 +32,26 @@ api.get('/musicians', function(req, res) {
   res.json(db.getMusicians());
 });
 
+api.get('/musicians/:musician/songs', function(req, res) {
+  res.json(db.getSongsByMusician(req.params.musician));
+});
+
+api.get('/musicians/:musician/name', function(req, res) {
+  res.json(db.getFormattedMusicianName(req.params.musician));
+});
+
+api.get('/musicians/:musician/positions', function(req, res) {
+  res.json(db.getPositionsByMusician(req.params.musician));
+});
+
 api.get('/positions', function(req, res) {
   res.json(db.getPositions());
 });
 
 api.post('/songs', function(req, res) {
-  setTimeout(function() {
-    var song = Immutable.fromJS(req.body);
-    song = db.addSong(song);
-    res.status(201).json(song);
-  }, 1000);
+  var song = Immutable.fromJS(req.body);
+  song = db.addSong(song);
+  res.status(201).json(song);
 });
 
 api.get('/songs/:id', function(req, res) {
@@ -48,6 +66,10 @@ api.get('/songs/:id', function(req, res) {
     return res.status(404).json(songNotFoundResponse());
   }
   return res.json(songs);
+});
+
+api.get('/songs/:title/name', function(req, res) {
+  res.json(db.getFormattedSongTitle(req.params.title));
 });
 
 api.put('/songs/:id', function(req, res) {
@@ -75,10 +97,7 @@ api.get('/songs/:id/band', function(req, res) {
   if (!band) {
     return res.status(404).json(songNotFoundResponse());
   }
-  // Fake long-running call to show loading
-  setTimeout(function() {
-    res.json(band);
-  }, 1000);
+  res.json(band);
 });
 
 api.post('/songs/:id/band', function(req, res) {

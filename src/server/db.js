@@ -1,5 +1,10 @@
+'use strict';
+
 var Immutable = require('immutable');
+var uniq = require('lodash.uniq');
 var structuredData = require('./data/structuredData');
+var Search = require('./search.js');
+var toParamCase = require('change-case').paramCase;
 
 var lastId = 0;
 Object.keys(structuredData.songsById).forEach(function (songId) {
@@ -12,8 +17,20 @@ var makeId = function makeId() {
 }
 
 var db = {};
-
 db._state = Immutable.fromJS(structuredData);
+db._search = new Search(structuredData.searchIndex);
+
+db.searchSongs = function (searchString, exact, max) {
+  if (typeof exact === 'number') {
+    max = exact;
+    exact = false;
+  }
+  if (!max) { max = 9999999; }
+  return new Immutable.List(uniq(db._search.search(searchString, ['title', 'bandMember', 'style'], exact)
+    .slice(0, max)
+    .map(function (hit) { return hit.id; }))
+    .map(db.getSong.bind(db)));
+};
 
 db.createSong = function() {
   var token = makeId();
@@ -27,18 +44,52 @@ db.getSongs = function() {
 };
 
 db.getSongTitles = function() {
+  var self = this;
   return this._state.get('songsByTitle')
     .keySeq()
     .sort()
+    .map(function (title) { return self._state.get('songsByTitle').get(title).get(0).get('title'); })
     .toList();
 };
 
-db.getSongsByTitle = function(title) {
-  var songs = this._state.getIn(['songsByTitle', title]);
+db.getSongsByTitle = function(titleSlug) {
+  var songs = this._state.getIn(['songsByTitle', titleSlug]);
   if (!songs) {
     return new Immutable.List();
   }
   return songs;
+};
+
+db.getFormattedSongTitle = function(titleSlug) {
+  var songs = this._state.getIn(['songsByTitle', titleSlug]);
+  if (!songs || !songs.size) {
+    return title;
+  }
+  return songs.get(0).get('title');
+};
+
+db.getSongsByMusician = function(musicianSlug) {
+  var songs = this._state.getIn(['songsByMusician', musicianSlug]);
+  if (!songs) {
+    return new Immutable.List();
+  }
+  return songs;
+};
+
+db.getPositionsByMusician = function(musicianSlug) {
+  var positions = this._state.getIn(['positionsByMusician', musicianSlug]);
+  if (!positions) {
+    return new Immutable.List();
+  }
+  return positions;
+};
+
+db.getFormattedMusicianName = function(musicianSlug) {
+  var positions = this._state.getIn(['bandMembersByName', musicianSlug]);
+  if (!positions || !positions.size) {
+    return musicianSlug
+  }
+  return positions.get(0).get('name');
 };
 
 db.getSongStyles = function() {

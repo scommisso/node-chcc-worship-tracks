@@ -1,15 +1,21 @@
+'use strict';
+
 var createStore = require('fluxible/addons/createStore');
 var reduce = require('lodash/collection/reduce');
 var values = require('lodash/object/values');
+var getHandlers = require('../utils/getHandlers');
+var stores = require('../constants').STORE;
+var songActions = require('../constants').ACTION.SONG;
+var songListActions = require('../constants').ACTION.SONGS;
 
 var SongStore = createStore({
-  storeName: 'SongStore',
+  storeName: stores.SONG,
 
-  handlers: {
-    'FETCH_SONGS_SUCCESS': 'setSongs',
-    'FETCH_SONG_SUCCESS': 'addSong',
-    'CREATE_SONG_SUCCESS': 'addSong'
-  },
+  handlers: getHandlers([
+    [songListActions.FETCH_SUCCESS, 'setSongs'],
+    [songActions.FETCH_SUCCESS, 'addSong'],
+    [songActions.CREATE_SUCCESS, 'addSong']
+  ]),
 
   initialize: function() {
     this.songsById = {};

@@ -1,9 +1,11 @@
 var React = require('react');
+var concurrent = require('contra').concurrent;
 var map = require('lodash/collection/map');
 var Router = require('react-router/build/npm/lib');
 var Link = Router.Link;
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongsByTitleStore = require('../stores/SongsByTitleStore');
+var fetchSongTitle = require('../actions/fetchSongTitle');
 var fetchSongsByTitle = require('../actions/fetchSongsByTitle');
 
 var SongsByTitle = React.createClass({
@@ -17,7 +19,10 @@ var SongsByTitle = React.createClass({
     storeListeners: [SongsByTitleStore],
 
     fetchData: function(context, params, query, done) {
-      context.executeAction(fetchSongsByTitle, { songTitle: params.title }, done);
+      concurrent([
+        context.executeAction.bind(context, fetchSongTitle, {titleSlug: params.title}),
+        context.executeAction.bind(context, fetchSongsByTitle, {songTitle: params.title})
+      ], done);
     }
   },
 
@@ -27,12 +32,9 @@ var SongsByTitle = React.createClass({
 
   getStateFromStores: function () {
     return {
-      songs: this.getStore(SongsByTitleStore).getSongs(),
+      songTitle: this.getStore(SongsByTitleStore).getSongTitle(),
+      songs: this.getStore(SongsByTitleStore).getSongs()
     };
-  },
-
-  getSongTitle: function() {
-    return this.context.router.getCurrentParams().title;
   },
 
   onChange: function() {
@@ -42,20 +44,25 @@ var SongsByTitle = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>{this.getSongTitle()}</h1>
+        <h1>{this.state.songTitle}</h1>
         <ul>{this.renderSongs()}</ul>
       </div>
     );
   },
 
+  getStyleString: function(song) {
+    if (!song.style) { return ''; }
+    return ' (' + song.style + ')';
+  },
+
   renderSongs: function() {
     var songs = this.state.songs;
-    console.log('SONGS BY TITLE', songs)
+    var getStyleString = this.getStyleString;
     return map(songs, function(song) {
       return (
         <li key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
-            {song.date} {song.title} {song.style ? '(' + song.style + ')' : ''}
+            {song.date} - {song.title + getStyleString(song)}
           </Link>
         </li>
       );

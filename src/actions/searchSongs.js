@@ -1,16 +1,16 @@
 'use strict';
 
-var debug = require('debug')('app:fetchSongsByTitle');
-var actions = require('../constants').ACTION.SONGS_BY_TITLE;
+var debug = require('debug')('app:searchSongs');
+var actions = require('../constants').ACTION.SONG_SEARCH;
 var songActions = require('../constants').ACTION.SONG;
 
 module.exports = function(context, payload, done) {
   debug('Started');
-  context.dispatch(actions.FETCH_START);
-  context.api.getSong(payload.songTitle, function(err, songs) {
+  context.dispatch(actions.SEARCH_START);
+  context.api.searchSongs(payload.query, payload.exact, payload.limit, function(err, songs) {
     if (err) {
       debug('Failed');
-      context.dispatch(actions.FETCH_FAILURE, err);
+      context.dispatch(actions.SEARCH_FAILURE, err);
       done();
       return;
     }
@@ -18,7 +18,7 @@ module.exports = function(context, payload, done) {
     songs.forEach(function (song) {
       context.dispatch(songActions.FETCH_SUCCESS, song);
     });
-    context.dispatch(actions.FETCH_SUCCESS, songs);
+    context.dispatch(actions.SEARCH_SUCCESS, songs);
     done();
   });
 };

@@ -1,5 +1,8 @@
 'use strict';
 
+var clone = require('clone');
+var toLower = require('change-case').lower;
+var toParamCase = require('change-case').paramCase;
 var fs = require('fs');
 var path = require('path');
 
@@ -11,6 +14,7 @@ var songsByTitle = {};
 var songsByMember = {};
 var bandMembersByPosition = {};
 var bandMembersByName = {};
+var positionsByBandMember = {};
 var songsByPlan = {};
 var styles = [];
 
@@ -19,14 +23,15 @@ songs.sort(songsByTitleAndDate);
 songs.forEach(function (song) {
   song.id = (id += 1);
   songsById[song.id] = song;
-  addToDictionaryList(songsByTitle, song.title, song);
+  addToDictionaryList(songsByTitle, toParamCase(song.title), song);
   addToDictionaryList(songsByPlan, parsePlan(song.planningCenter && song.planningCenter.plan), song);
 
   if (Array.isArray(song.band)) {
     song.band.forEach(function (member) {
-      addToDictionarySet(bandMembersByPosition, member.position, member.name);
-      addToDictionarySet(bandMembersByName, member.name, member.position);
-      addToDictionarySet(songsByMember, member.name, song);
+      addToDictionarySet(bandMembersByPosition, toParamCase(member.position.trim()), member.name);
+      addToDictionarySet(bandMembersByName, toParamCase(member.name.trim()), member);
+      addToDictionarySet(positionsByBandMember, toParamCase(member.name.trim()), member.position);
+      addToDictionarySet(songsByMember, toParamCase(member.name.trim()), song);
     });
   }
 
@@ -74,12 +79,46 @@ function songsByTitleAndDate(a, b) {
   return date1 > date2 ? -1 : 1;
 }
 
+function buildSearchIndex(songs) {
+  var songSearch = [];
+  songs.forEach(function (song) {
+    var s = clone(song);
+    if (song.planningCenter) {
+      if (song.planningCenter.plan) { s.planningCenterPlan = s.planningCenter.plan; }
+      if (song.planningCenter.arrangement) { s.planningCenterArrangement = s.planningCenter.arrangement; }
+      delete s.planningCenter;
+    }
+    if (song.band) {
+      var band = song.band;
+      delete s.band;
+      band.forEach(function (member) {
+        var sBand = clone(s);
+        sBand.bandMember = member.name;
+        sBand.bandPosition = member.position;
+        songSearch.push(objectLowerCase(sBand));
+      });
+    } else {
+      songSearch.push(objectLowerCase(s));
+    }
+  });
+  return songSearch;
+}
+
+function objectLowerCase(value) {
+  Object.keys(value).forEach(function (k) {
+    value[k] = toLower(value[k]);
+  });
+  return value;
+}
+
 module.exports = {
   songsById: songsById,
   songsByPlan: songsByPlan,
   songsByTitle: songsByTitle,
-  songsByMemberName: songsByMember,
+  songsByMusician: songsByMember,
+  positionsByMusician: positionsByBandMember,
   styles: styles,
   bandMembersByPosition: bandMembersByPosition,
-  bandMembersByName: bandMembersByName
+  bandMembersByName: bandMembersByName,
+  searchIndex: buildSearchIndex(songs)
 };

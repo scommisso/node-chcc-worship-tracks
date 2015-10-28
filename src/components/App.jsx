@@ -12,8 +12,7 @@ var App = React.createClass({
     return (
       <div>
         <p>
-          <Link to="song-titles">Songs</Link> |
-          <Link to="songs">Database</Link>
+          <Link to="song-titles">Songs</Link> | <Link to="songs">Database</Link>
         </p>
         <RouteHandler />
       </div>

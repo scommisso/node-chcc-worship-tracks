@@ -1,13 +1,18 @@
+'use strict';
+
 var createStore = require('fluxible/addons/createStore');
+var getHandlers = require('../utils/getHandlers');
+var stores = require('../constants').STORE;
+var actions = require('../constants').ACTION.SONG;
 
 var CreateSongStore = createStore({
-  storeName: 'CreateSongStore',
+  storeName: stores.CREATE_SONG,
 
-  handlers: {
-    'CREATE_SONG_START': 'start',
-    'CREATE_SONG_FAILURE': 'failure',
-    'CREATE_SONG_SUCCESS': 'success'
-  },
+  handlers: getHandlers([
+    [actions.CREATE_START, 'start'],
+    [actions.CREATE_FAILURE, 'failure'],
+    [actions.CREATE_SUCCESS, 'success']
+  ]),
 
   initialize: function() {
     this.working = false;

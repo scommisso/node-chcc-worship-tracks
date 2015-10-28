@@ -3,33 +3,33 @@
 var createStore = require('fluxible/addons/createStore');
 var getHandlers = require('../utils/getHandlers');
 var stores = require('../constants').STORE;
-var actions = require('../constants').ACTION.SONGS_BY_TITLE;
-var titleActions = require('../constants').ACTION.SONG_TITLES;
+var actions = require('../constants').ACTION.SONGS_BY_MUSICIAN;
+var musicianActions = require('../constants').ACTION.MUSICIAN;
 
-var SongsByTitleStore = createStore({
-  storeName: stores.SONGS_BY_TITLE,
+var SongsByMusicianStore = createStore({
+  storeName: stores.SONGS_BY_MUSICIAN,
 
   handlers: getHandlers([
     [actions.FETCH_START, 'start'],
     [actions.FETCH_FAILURE, 'failure'],
     [actions.FETCH_SUCCESS, 'success'],
-    [titleActions.FETCH_TITLE_SUCCESS, 'titleSuccess']
+    [musicianActions.FETCH_SUCCESS, 'musicianSuccess']
   ]),
 
   initialize: function() {
     this.songs = [];
-    this.songTitleSlug = null;
-    this.songTitle = null;
+    this.musicianSlug = null;
+    this.musician = null;
     this.working = false;
   },
 
-  setSongTitle: function(songTitle) {
-    songTitle = toParamCase(songTitle);
-    if (this.songTitleSlug && songTitle !== this.songTitleSlug) {
+  setMusician: function(musician) {
+    musician = toParamCase(musician);
+    if (this.musicianSlug && musician !== this.musicianSlug) {
       this.songs = [];
-      this.songTitle = null;
+      this.musician = null;
     }
-    this.songTitleSlug = songTitle;
+    this.musicianSlug = musician;
     this.emitChange();
   },
 
@@ -48,17 +48,21 @@ var SongsByTitleStore = createStore({
     this.emitChange();
   },
 
-  titleSuccess: function(songTitle) {
-    this.songTitle = songTitle;
+  musicianSuccess: function(musician) {
+    this.musician = musician;
     this.emitChange();
   },
 
-  getSongTitleSlug: function() {
-    return this.songTitleSlug;
+  isLoading: function() {
+    return this.working;
   },
 
-  getSongTitle: function() {
-    return this.songTitle;
+  getMusicianSlug: function() {
+    return this.musicianSlug;
+  },
+
+  getMusician: function() {
+    return this.musician;
   },
 
   getSongs: function() {
@@ -68,18 +72,18 @@ var SongsByTitleStore = createStore({
   dehydrate: function() {
     return {
       songs: this.songs,
-      songTitle: this.songTitle,
-      songTitleSlug: this.songTitleSlug,
+      musicianSlug: this.musicianSlug,
+      musician: this.musician,
       working: this.working
     };
   },
 
   rehydrate: function(state) {
     this.songs = state.songs;
-    this.songTitle = state.songTitle;
-    this.songTitleSlug = state.songTitleSlug;
+    this.musicianSlug = state.musicianSlug;
+    this.musician = state.musician;
     this.working = state.working;
   }
 });
 
-module.exports = SongsByTitleStore;
+module.exports = SongsByMusicianStore;

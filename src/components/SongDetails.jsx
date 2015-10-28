@@ -1,4 +1,6 @@
 var React = require('react');
+var map = require('lodash/collection/map');
+var toParamCase = require('change-case').paramCase;
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var Router = require('react-router/build/npm/lib');
 var Link = Router.Link;
@@ -46,12 +48,10 @@ var SongDetails = React.createClass({
           <Link to="song-titles">
             Back to songs
           </Link>
-          {' - '}
-          <Link to="song-band" params={{id: this.getSongId()}}>
-            Song band members
-          </Link>
         </p>
         {this.renderSong()}
+        <h2>Band</h2>
+        {this.renderBand()}
       </div>
     );
   },
@@ -62,19 +62,49 @@ var SongDetails = React.createClass({
       return null;
     }
     var footer = '';
+    var getStyleString = this.getStyleString;
+    var renderStyleItem = this.renderStyleItem;
     return (
       <ul>
         <li><strong>Date: </strong>{song.date}</li>
         <li><strong>Title: </strong>{song.title}</li>
-        <li><strong>Style: </strong>{song.style}</li>
-        <li><a href={song.video} title={song.title + ' ' + song.style} target="_blank">
-          Video - {song.title + ' ' + song.style}
-        </a></li>
-        <li><a href={song.audio} title={song.title + ' ' + song.style} target="_blank">
-          Audio - {song.title + ' ' + song.style}
-        </a></li>
+        {renderStyleItem(song)}
+        <li><strong>Video: </strong>
+          <a href={song.video} title={song.title + getStyleString(song)} target="_blank">
+            {song.title + getStyleString(song)}
+          </a>
+        </li>
+        <li><strong>Audio: </strong>
+          <a href={song.audio} title={song.title + getStyleString(song)} target="_blank">
+            {song.title + getStyleString(song)}
+          </a>
+        </li>
       </ul>
     );
+  },
+
+  renderStyleItem: function(song) {
+    if (!song.style) { return ''; }
+    return (<li><strong>Style: </strong>{song.style}</li>);
+  },
+
+  getStyleString: function(song) {
+    if (!song.style) { return ''; }
+    return ' (' + song.style + ')';
+  },
+
+  renderBand: function() {
+    var band = this.state.song.band;
+    return map(band, function(bandMember, index) {
+      return (
+        <li key={index}>
+          <span><strong>{bandMember.position}</strong>: </span>
+          <Link to="musician-details" params={{musician: toParamCase(bandMember.name.trim())}}>
+            {bandMember.name}
+          </Link>
+        </li>
+      );
+    });
   }
 });
 

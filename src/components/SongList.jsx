@@ -28,7 +28,7 @@ var SongList = React.createClass({
 
   getStateFromStores: function () {
     return {
-      songs: this.getStore(SongStore).getSongs(),
+      songs: this.getStore(SongStore).getSongs()
     };
   },
 
@@ -46,13 +46,19 @@ var SongList = React.createClass({
     );
   },
 
+  getStyleString: function(song) {
+    if (!song.style) { return ''; }
+    return ' (' + song.style + ')';
+  },
+
   renderSongs: function() {
     var songs = this.state.songs;
+    var getStyleString = this.getStyleString;
     return map(songs, function(song) {
       return (
         <li key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
-            {song.date} {song.title} {song.style ? '(' + song.style + ')' : ''}
+            {song.date} - {song.title + getStyleString(song)}
           </Link>
         </li>
       );

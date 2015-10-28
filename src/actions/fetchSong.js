@@ -1,17 +1,20 @@
+'use strict';
+
 var debug = require('debug')('app:fetchSong');
+var actions = require('../constants').ACTION.SONG;
 
 module.exports = function(context, payload, done) {
   debug('Started');
-  context.dispatch('FETCH_SONG_START');
+  context.dispatch(actions.FETCH_START);
   context.api.getSong(payload.songId, function(err, songs) {
     if (err || !songs.length) {
       debug('Failed');
-      context.dispatch('FETCH_SONG_FAILURE', err);
+      context.dispatch(actions.FETCH_FAILURE, err);
       done();
       return;
     }
     debug('Success');
-    context.dispatch('FETCH_SONG_SUCCESS', songs[0]);
+    context.dispatch(actions.FETCH_SUCCESS, songs[0]);
     done();
   });
 };
