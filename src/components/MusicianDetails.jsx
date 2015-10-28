@@ -63,9 +63,7 @@ var MusicianDetails = React.createClass({
                 Songs <span className="badge">{this.state.songs.length}</span>
               </h3>
             </div>
-            <div className="panel-body">
             <ul className="list-group">{this.renderSongs()}</ul>
-            </div>
           </div>
         </div>
       </div>);

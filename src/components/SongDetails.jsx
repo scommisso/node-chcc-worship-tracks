@@ -59,9 +59,7 @@ var SongDetails = React.createClass({
                 Band <span className="badge">{song.band.length}</span>
               </h3>
             </div>
-            <div className="panel-body">
-              <ul className="list-group">{this.renderBand()}</ul>
-            </div>
+            <ul className="list-group">{this.renderBand()}</ul>
           </div>
         </div>
       </div>);

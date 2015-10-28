@@ -40,7 +40,7 @@ var App = React.createClass({
         </div>
         <footer className="footer">
           <div className="container">
-            <p className="text-muted">Copyright &copy; 2015 Steve Commisso</p>
+            <p className="text-muted">Copyright &copy; 2015 Stephen Commisso</p>
           </div>
         </footer>
       </div>

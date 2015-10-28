@@ -1,8 +1,6 @@
 'use strict';
 
 var createStore = require('fluxible/addons/createStore');
-var reduce = require('lodash/collection/reduce');
-var values = require('lodash/object/values');
 var getHandlers = require('../utils/getHandlers');
 var stores = require('../constants').STORE;
 var actions = require('../constants').ACTION.SONG_SEARCH;
@@ -25,11 +23,11 @@ var SongSearchStore = createStore({
       limit: null
     };
     this.working = false;
-    this.songs = null;
+    this.searchResults = null;
   },
 
   start: function() {
-    this.songs = null;
+    this.searchResults = null;
     this.working = true;
     this.emitChange();
   },
@@ -39,9 +37,9 @@ var SongSearchStore = createStore({
     this.emitChange();
   },
 
-  success: function(songs) {
+  success: function(searchResults) {
     this.working = false;
-    this.songs = songs;
+    this.searchResults = searchResults;
     this.emitChange();
   },
 
@@ -49,8 +47,8 @@ var SongSearchStore = createStore({
     this.searchData = searchData;
   },
 
-  getSongs: function() {
-    return this.songs;
+  getSearchResults: function() {
+    return this.searchResults;
   },
 
   isLoading: function() {
@@ -63,14 +61,14 @@ var SongSearchStore = createStore({
 
   dehydrate: function() {
     return {
-      songs: this.songs,
+      searchResults: this.searchResults,
       searchData: this.searchData
     };
   },
 
   rehydrate: function(state) {
     this.working = false;
-    this.songs = state.songs;
+    this.searchResults = state.searchResults;
     this.searchData = state.searchData;
   }
 });

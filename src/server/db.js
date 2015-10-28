@@ -2,6 +2,7 @@
 
 var Immutable = require('immutable');
 var uniq = require('lodash.uniq');
+var filter = require('lodash.filter');
 var toParamCase = require('change-case').paramCase;
 var nameParser = require('another-name-parser');
 var structuredData = require('./data/structuredData');
@@ -27,10 +28,24 @@ db.searchSongs = function (searchString, exact, max) {
     exact = false;
   }
   if (!max) { max = 9999999; }
-  return new Immutable.List(uniq(db._search.search(searchString, ['title', 'bandMember', 'style'], exact)
-    .slice(0, max)
-    .map(function (hit) { return hit.id; }))
-    .map(db.getSong.bind(db)));
+
+  var matches = db._search.search(searchString, ['title', 'bandMember', 'style'], exact);
+  var full = uniq(filter(matches, function (hit) { return hit.score >= 1; })
+    .map(function (hit) { return hit.id; }));
+  var partial = uniq(filter(matches, function (hit) { return !~full.indexOf(hit.id); })
+    .map(function (hit) { return hit.id; }));
+
+  full = full.slice(0, max);
+  max = max - full.length;
+  partial = partial.slice(0, max);
+
+  full = full.map(db.getSong.bind(db));
+  partial = partial.map(db.getSong.bind(db));
+
+  return {
+    full: new Immutable.List(full),
+    partial: new Immutable.List(partial)
+  };
 };
 
 db.createSong = function() {

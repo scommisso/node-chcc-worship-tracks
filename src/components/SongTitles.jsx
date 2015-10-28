@@ -56,13 +56,11 @@ var SongList = React.createClass({
       <div className="row">
         <div className="panel panel-default">
           <div className="panel-heading">
-            <h3 className="panel-title">
+            <div className="panel-title">
               <h1>Song List <span className="badge badge-lg">{songCount}</span></h1>
-            </h3>
+            </div>
           </div>
-          <div className="panel-body">
-            <ul className="list-group">{this.renderSongs(songTitles)}</ul>
-          </div>
+          <ul className="list-group">{this.renderSongs(songTitles)}</ul>
         </div>
       </div>
     );

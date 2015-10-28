@@ -7,7 +7,7 @@ var songActions = require('../constants').ACTION.SONG;
 module.exports = function(context, payload, done) {
   debug('Started');
   context.dispatch(actions.SEARCH_START);
-  context.api.searchSongs(payload.query, payload.exact, payload.limit, function(err, songs) {
+  context.api.searchSongs(payload.query, payload.exact, payload.limit, function(err, searchResults) {
     if (err) {
       debug('Failed');
       context.dispatch(actions.SEARCH_FAILURE, err);
@@ -15,10 +15,13 @@ module.exports = function(context, payload, done) {
       return;
     }
     debug('Success');
-    songs.forEach(function (song) {
+    (searchResults.full || []).forEach(function (song) {
       context.dispatch(songActions.FETCH_SUCCESS, song);
     });
-    context.dispatch(actions.SEARCH_SUCCESS, songs);
+    (searchResults.partial || []).forEach(function (song) {
+      context.dispatch(songActions.FETCH_SUCCESS, song);
+    });
+    context.dispatch(actions.SEARCH_SUCCESS, searchResults);
     done();
   });
 };

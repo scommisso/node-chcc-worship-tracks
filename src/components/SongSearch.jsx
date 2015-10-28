@@ -2,6 +2,7 @@ var React = require('react');
 var series = require('contra').series;
 var map = require('lodash/collection/map');
 var Router = require('react-router');
+var pluralize = require('pluralize')
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 
 var SongSearchStore = require('../stores/SongSearchStore');
@@ -9,7 +10,6 @@ var setSearchCriteria = require('../actions/setSearchCriteria');
 var searchSongs = require('../actions/searchSongs');
 
 var Link = Router.Link;
-var SongSearch = require('./SongSearch.jsx');
 var Loading = require('./Loading.jsx');
 
 var SearchSongs = React.createClass({
@@ -29,7 +29,7 @@ var SearchSongs = React.createClass({
           context.executeAction.bind(context, setSearchCriteria, {query: query.query, exact: query.exact, limit: query.limit})
         ], done);
       } else {
-        context.executeAction(setSearchCriteria, {query: query.query, exact: query.exact, limit: query.limit}, done);
+        context.executeAction(setSearchCriteria, {}, done);
       }
     }
   },
@@ -41,7 +41,7 @@ var SearchSongs = React.createClass({
   getStateFromStores: function () {
     return {
       searchCriteria: this.getStore(SongSearchStore).getSearchData(),
-      songSearchResults: this.getStore(SongSearchStore).getSongs(),
+      songSearchResults: this.getStore(SongSearchStore).getSearchResults(),
       loading: this.getStore(SongSearchStore).isLoading()
     };
   },
@@ -67,27 +67,83 @@ var SearchSongs = React.createClass({
 
   renderData: function() {
     var searchResult = this.state.songSearchResults;
-    var searchResultCount = searchResult && searchResult.length;
-    if (!searchResultCount) { return ''; }
+    var fullCount = (searchResult && searchResult.full && searchResult.full.length) || 0;
+    var partialCount = (searchResult && searchResult.partial && searchResult.partial.length)|| 0;
+    var totalCount = fullCount + partialCount;
+    if (!totalCount) {
+      if (!this.state.searchCriteria || !this.state.searchCriteria.query) { return ''; }
+      return (
+        <div className="row">
+          <div className="panel panel-default">
+            <div className="panel-body">
+              <em>No matches found</em>
+            </div>
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="row">
         <div className="panel panel-default">
           <div className="panel-heading">
-            <h3 className="panel-title">
-              <h1>Search Results <span className="badge badge-lg">{searchResultCount}</span></h1>
-            </h3>
+            <div className="panel-title">
+              <h1>Search Results <span className="badge badge-lg">{totalCount}</span></h1>
+            </div>
           </div>
           <div className="panel-body">
-            <ul className="list-group">{this.renderSearchResults()}</ul>
+            {this.renderSearchResults(searchResult, fullCount, partialCount)}
           </div>
         </div>
       </div>
     );
   },
 
-  renderSearchResults: function() {
-    var songs = this.state.songSearchResults;
+  renderSearchResults: function(searchResult, fullCount, partialCount) {
+    return (
+      <div id="search-accordion" className="panel-group">
+        <div className="panel panel-success">
+          <div className="panel-heading panel-heading-collapse" data-toggle="collapse" data-parent="#search-accordion" data-target="#collapse-full">
+            <h3 className="panel-title">
+              <em>{fullCount} Full {pluralize('Match', fullCount)}</em>
+            </h3>
+          </div>
+          <div id="collapse-full" className={this.getFullPanelClassName(fullCount)}>
+            <ul className="list-group">
+              {this.renderResultSongs(searchResult.full)}
+            </ul>
+          </div>
+        </div>
+        <div className="panel panel-warning">
+          <div className="panel-heading panel-heading-collapse" data-toggle="collapse" data-parent="#search-accordion" data-target="#collapse-partial">
+            <h3 className="panel-title">
+              <em>{partialCount} Partial {pluralize('Match', partialCount)}</em>
+            </h3>
+          </div>
+          <div id="collapse-partial" className={this.getPartialPanelClassName(fullCount, partialCount)}>
+            <ul className="list-group">
+              {this.renderResultSongs(searchResult.partial)}
+            </ul>
+          </div>
+        </div>
+      </div>
+      );
+  },
+
+  getFullPanelClassName: function(fullCount) {
+    var className = 'panel-collapse collapse';
+    if (fullCount > 0) { className += ' in'; }
+    return className;
+  },
+
+  getPartialPanelClassName: function(fullCount, partialCount) {
+    var className = 'panel-collapse collapse';
+    if (fullCount <= 0 && partialCount > 0) { className += ' in'; }
+    return className;
+  },
+
+  renderResultSongs: function(songs) {
     var getStyleString = this.getStyleString;
+    if (!songs || !songs.length) { return ''; }
     return map(songs, function(song) {
       return (
         <li className="list-group-item" key={song.id}>
@@ -102,6 +158,7 @@ var SearchSongs = React.createClass({
   renderSearch: function() {
     var disabled;
     var text = 'Search for...';
+    var query = this.state.searchCriteria && this.state.searchCriteria.query;
 
     if (this.state.working) {
       disabled = true;
@@ -110,7 +167,7 @@ var SearchSongs = React.createClass({
 
     return (
       <div className="input-group">
-        <input type="text" className="form-control" ref="song_search_text" name="song_search_text" placeholder={text} />
+        <input type="text" className="form-control" ref="song_search_text" name="song_search_text" placeholder={text} defaultValue={query} />
         <span className="input-group-btn">
           <button className="btn btn-default" type="submit" disabled={disabled} style={{paddingTop: '9px', paddingBottom: '9px'}}>
             <span className="glyphicon glyphicon-search"></span>

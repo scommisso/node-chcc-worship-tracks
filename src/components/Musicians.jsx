@@ -60,9 +60,7 @@ var Musicians = React.createClass({
               <h1>Musicians <span className="badge badge-lg">{musicianCount}</span></h1>
             </h3>
           </div>
-          <div className="panel-body">
-            <ul className="list-group">{this.renderMusicians(musicians)}</ul>
-          </div>
+          <ul className="list-group">{this.renderMusicians(musicians)}</ul>
         </div>
       </div>
     );

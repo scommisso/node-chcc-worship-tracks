@@ -42,10 +42,18 @@ var SongsByTitle = React.createClass({
   },
 
   render: function() {
+    var songs = this.state.songs;
+    var songCount = songs && songs.length;
     return (
-      <div>
-        <h1>{this.state.songTitle}</h1>
-        <ul>{this.renderSongs()}</ul>
+      <div className="row">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
+              <h1>{this.state.songTitle} <span className="badge badge-lg">{songCount}</span></h1>
+            </h3>
+          </div>
+          <ul className="list-group">{this.renderSongs(songs)}</ul>
+        </div>
       </div>
     );
   },
@@ -55,12 +63,11 @@ var SongsByTitle = React.createClass({
     return ' (' + song.style + ')';
   },
 
-  renderSongs: function() {
-    var songs = this.state.songs;
+  renderSongs: function(songs) {
     var getStyleString = this.getStyleString;
     return map(songs, function(song) {
       return (
-        <li key={song.id}>
+        <li className="list-group-item" key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
             {song.date} - {song.title + getStyleString(song)}
           </Link>

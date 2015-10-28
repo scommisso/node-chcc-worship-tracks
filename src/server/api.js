@@ -10,7 +10,7 @@ api.get('/songs', function(req, res) {
   var exact = query.exact;
   var limit = query.limit;
   if (search) {
-    setTimeout(function () { res.json(db.searchSongs(search, exact, limit)); }, 1000);
+    res.json(db.searchSongs(search, exact, limit));
   } else {
     res.json(db.getSongs());
   }
