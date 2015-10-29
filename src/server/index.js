@@ -1,7 +1,7 @@
 require('node-jsx').install({extension: '.jsx'});
 var path = require('path');
 var express = require('express');
-var cors = require('express-cors');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var serialize = require('serialize-javascript');
@@ -21,9 +21,7 @@ var server = express();
 
 server.use(bodyParser.json());
 server.use(cookieParser());
-server.use(cors({
-  allowedOrigins: ['*']
-}));
+server.use(cors());
 server.use('/api', api);
 server.use('/public', express.static(path.join(__dirname, '..', '..', 'build')));
 server.use('/styles', express.static(path.join(__dirname, '..', '..', 'css')));
