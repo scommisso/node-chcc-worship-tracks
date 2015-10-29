@@ -127,7 +127,17 @@ db.getMusicians = function() {
     .map(function (title) {
       var fullName = self._state.get('bandMembersByName').get(title).get(0).get('name');
       var parsed = nameParser(fullName);
-      return { full: fullName, last: parsed.last.trim().toLowerCase(), first: parsed.first.trim().toLowerCase() };
+      var last = parsed.last && parsed.last.trim().toLowerCase();
+      var first = parsed.first && parsed.first.trim().toLowerCase();
+      if (!last && first) {
+        last = first;
+        first = '';
+      }
+      return {
+        full: fullName,
+        last: last,
+        first: first
+      };
     })
     .sort(function (a, b) {
       if (a.last === b.last) {
