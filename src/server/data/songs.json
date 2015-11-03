@@ -6861,4 +6861,104 @@
     "plan": "https://planningcenteronline.com/plans/20909097",
     "arrangement": "https://planningcenteronline.com/arrangements/8131263"
   }
+},
+{
+  "title": "This Is Amazing Grace",
+  "date": "2015-11-01",
+  "band": [
+    { "position": "electric guitar", "name": "Jon Ivey" },
+    { "position": "acoustic guitar", "name": "Michel Holmes" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "drums", "name": "Will Davis" },
+    { "position": "bass guitar", "name": "Reyn Stockton" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
+    { "position": "background vocal", "name": "Michel Holmes" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/966600b2f599d97902bab305fc3d45ed?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/144460994#t=0m8s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909099",
+    "arrangement": "https://planningcenteronline.com/arrangements/10369879"
+  }
+},
+{
+  "title": "Great Are You Lord",
+  "date": "2015-11-01",
+  "band": [
+    { "position": "electric guitar", "name": "Jon Ivey" },
+    { "position": "acoustic guitar", "name": "Michel Holmes" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "drums", "name": "Will Davis" },
+    { "position": "bass guitar", "name": "Reyn Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "background vocal", "name": "Michel Holmes" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/f1048de4fa73f1c923f8f6f115b80065?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/144460994#t=6m28s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909099",
+    "arrangement": "https://planningcenteronline.com/arrangements/9850619"
+  }
+},
+{
+  "title": "Came to My Rescue",
+  "date": "2015-11-01",
+  "band": [
+    { "position": "electric guitar", "name": "Jon Ivey" },
+    { "position": "acoustic guitar", "name": "Michel Holmes" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "drums", "name": "Will Davis" },
+    { "position": "bass guitar", "name": "Reyn Stockton" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Michel Holmes" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/de4414417952f63b6225fcc34924cbfd?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/144460994#t=13m11s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909099",
+    "arrangement": "https://planningcenteronline.com/arrangements/1366952"
+  }
+},
+{
+  "title": "Holy Spirit",
+  "date": "2015-11-01",
+  "band": [
+    { "position": "electric guitar", "name": "Jon Ivey" },
+    { "position": "acoustic guitar", "name": "Michel Holmes" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "drums", "name": "Will Davis" },
+    { "position": "bass guitar", "name": "Reyn Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "background vocal", "name": "Michel Holmes" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/d3c3c9915bc95db1f8fc292404795b5a?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/144460994#t=28m3s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909099",
+    "arrangement": "https://planningcenteronline.com/arrangements/5650983"
+  }
+},
+{
+  "title": "Ever Yours",
+  "date": "2015-11-01",
+  "band": [
+    { "position": "acoustic guitar", "name": "Jon Ivey" },
+    { "position": "acoustic guitar", "name": "Michel Holmes" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "drums", "name": "Will Davis" },
+    { "position": "bass guitar", "name": "Reyn Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "background vocal", "name": "Michel Holmes" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/11b0daca38014a44a1edcce9320f823c?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/144460994#t=83m29s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909099",
+    "arrangement": "https://planningcenteronline.com/arrangements/10836715"
+  }
 }]
