@@ -51,14 +51,23 @@ var SongList = React.createClass({
     return ' (' + song.style + ')';
   },
 
+  getSongDisplayText: function(song) {
+    var text = song.date + ' - ' + song.title + this.getStyleString(song);
+    var lead = song.band.filter(function (bm) { return bm.position === 'lead vocal'; })[0];
+    if (lead) {
+      text += ', lead: ' + lead.name;
+    }
+    return text;
+  },
+
   renderSongs: function() {
     var songs = this.state.songs;
-    var getStyleString = this.getStyleString;
+    var getSongDisplayText = this.getSongDisplayText;
     return map(songs, function(song) {
       return (
         <li key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
-            {song.date} - {song.title + getStyleString(song)}
+            {getSongDisplayText(song)}
           </Link>
         </li>
       );

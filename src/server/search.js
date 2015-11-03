@@ -86,6 +86,12 @@ function tokenize(value) {
       currToken = '';
     }
   }
+  if (currToken) {
+    currToken = currToken.trim();
+    if (currToken.length) {
+      tokens.push(currToken);
+    }
+  }
   return tokens;
 }
 

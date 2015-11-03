@@ -142,13 +142,13 @@ var SearchSongs = React.createClass({
   },
 
   renderResultSongs: function(songs) {
-    var getStyleString = this.getStyleString;
+    var getSongDisplayText = this.getSongDisplayText;
     if (!songs || !songs.length) { return ''; }
     return map(songs, function(song) {
       return (
         <li className="list-group-item" key={song.id}>
           <Link to="song-details" params={{id: song.id}}>
-            {song.date} - {song.title + getStyleString(song)}
+            {getSongDisplayText(song)}
           </Link>
         </li>
       );
@@ -180,6 +180,15 @@ var SearchSongs = React.createClass({
   getStyleString: function(song) {
     if (!song.style) { return ''; }
     return ' (' + song.style + ')';
+  },
+
+  getSongDisplayText: function(song) {
+    var text = song.date + ' - ' + song.title + this.getStyleString(song);
+    var lead = song.band.filter(function (bm) { return bm.position === 'lead vocal'; })[0];
+    if (lead) {
+      text += ', lead: ' + lead.name;
+    }
+    return text;
   },
 
   renderLoading: function() {
