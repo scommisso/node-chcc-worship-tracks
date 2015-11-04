@@ -1,7 +1,6 @@
 var React = require('react');
 var series = require('contra').series;
 var map = require('lodash/collection/map');
-var Router = require('react-router');
 var pluralize = require('pluralize')
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 
@@ -9,14 +8,11 @@ var SongSearchStore = require('../stores/SongSearchStore');
 var setSearchCriteria = require('../actions/setSearchCriteria');
 var searchSongs = require('../actions/searchSongs');
 
-var Link = Router.Link;
 var Loading = require('./Loading.jsx');
+var SongListWidget= require('./SongListWidget.jsx');
 
 var SearchSongs = React.createClass({
-  contextTypes: {
-    router: React.PropTypes.func.isRequired
-  },
-
+  
   mixins: [FluxibleMixin],
 
   statics: {
@@ -109,7 +105,7 @@ var SearchSongs = React.createClass({
           </div>
           <div id="collapse-full" className={this.getFullPanelClassName(fullCount)}>
             <ul className="list-group">
-              {this.renderResultSongs(searchResult.full)}
+              <SongListWidget songs={searchResult.full} />
             </ul>
           </div>
         </div>
@@ -121,7 +117,7 @@ var SearchSongs = React.createClass({
           </div>
           <div id="collapse-partial" className={this.getPartialPanelClassName(fullCount, partialCount)}>
             <ul className="list-group">
-              {this.renderResultSongs(searchResult.partial)}
+              <SongListWidget songs={searchResult.partial} />
             </ul>
           </div>
         </div>
@@ -139,20 +135,6 @@ var SearchSongs = React.createClass({
     var className = 'panel-collapse collapse';
     if (fullCount <= 0 && partialCount > 0) { className += ' in'; }
     return className;
-  },
-
-  renderResultSongs: function(songs) {
-    var getSongDisplayText = this.getSongDisplayText;
-    if (!songs || !songs.length) { return ''; }
-    return map(songs, function(song) {
-      return (
-        <li className="list-group-item" key={song.id}>
-          <Link to="song-details" params={{id: song.id}}>
-            {getSongDisplayText(song)}
-          </Link>
-        </li>
-      );
-    });
   },
 
   renderSearch: function() {
@@ -175,20 +157,6 @@ var SearchSongs = React.createClass({
         </span>
       </div>
     );
-  },
-
-  getStyleString: function(song) {
-    if (!song.style) { return ''; }
-    return ' (' + song.style + ')';
-  },
-
-  getSongDisplayText: function(song) {
-    var text = song.date + ' - ' + song.title + this.getStyleString(song);
-    var lead = song.band.filter(function (bm) { return bm.position === 'lead vocal'; })[0];
-    if (lead) {
-      text += ', lead: ' + lead.name;
-    }
-    return text;
   },
 
   renderLoading: function() {

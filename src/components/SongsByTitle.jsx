@@ -1,17 +1,13 @@
 var React = require('react');
 var concurrent = require('contra').concurrent;
 var map = require('lodash/collection/map');
-var Router = require('react-router');
-var Link = Router.Link;
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongsByTitleStore = require('../stores/SongsByTitleStore');
 var fetchSongTitle = require('../actions/fetchSongTitle');
 var fetchSongsByTitle = require('../actions/fetchSongsByTitle');
+var SongListWidget= require('./SongListWidget.jsx');
 
 var SongsByTitle = React.createClass({
-  contextTypes: {
-    router: React.PropTypes.func.isRequired
-  },
 
   mixins: [FluxibleMixin],
 
@@ -52,37 +48,10 @@ var SongsByTitle = React.createClass({
               <h1>{this.state.songTitle} <span className="badge badge-lg">{songCount}</span></h1>
             </h3>
           </div>
-          <ul className="list-group">{this.renderSongs(songs)}</ul>
+          <SongListWidget songs={songs} />
         </div>
       </div>
     );
-  },
-
-  getStyleString: function(song) {
-    if (!song.style) { return ''; }
-    return ' (' + song.style + ')';
-  },
-
-  getSongDisplayText: function(song) {
-    var text = song.date + ' - ' + song.title + this.getStyleString(song);
-    var lead = song.band.filter(function (bm) { return bm.position === 'lead vocal'; })[0];
-    if (lead) {
-      text += ', lead: ' + lead.name;
-    }
-    return text;
-  },
-
-  renderSongs: function(songs) {
-    var getSongDisplayText = this.getSongDisplayText;
-    return map(songs, function(song) {
-      return (
-        <li className="list-group-item" key={song.id}>
-          <Link to="song-details" params={{id: song.id}}>
-            {getSongDisplayText(song)}
-          </Link>
-        </li>
-      );
-    });
   }
 });
 
