@@ -290,7 +290,7 @@
     { "position": "keys", "name": "Steve Commisso" },
     { "position": "bass guitar", "name": "Logan Post" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Dana DeBano" }
+    { "position": "lead vocal", "name": "Dana DeBano" }
   ],
   "audio": "//nebula.phx3.secureserver.net/1e131de6931d93da6d1e79b9e2ade6f7?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/137105353#t=85m36s",
@@ -480,7 +480,7 @@
   "band": [
     { "position": "acoustic guitar", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Dana DeBano" }
+    { "position": "lead vocal", "name": "Dana DeBano" }
   ],
   "audio": "//nebula.phx3.secureserver.net/1fcc813ddbc18c4ecd1f9a6f58159c46?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/127480388#t=67m34s",
@@ -750,7 +750,7 @@
     { "position": "drums", "name": "Tyler Johnson" },
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Jessica McGowan" }
+    { "position": "lead vocal", "name": "Jessica McGowan" }
   ],
   "audio": "//nebula.phx3.secureserver.net/4788f737b57a5b568123cad89b3688fe?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/136589627#t=83m29s",
@@ -770,7 +770,7 @@
     { "position": "drums", "name": "Tyler Johnson" },
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Jessica McGowan" }
+    { "position": "lead vocal", "name": "Jessica McGowan" }
   ],
   "audio": "//nebula.phx3.secureserver.net/e391018fc354a1c8a9bec50b05027836?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/136589627#t=87m41s",
@@ -870,7 +870,7 @@
     { "position": "keys", "name": "Anthony Soza" },
     { "position": "lead vocal", "name": "Brian Albright" },
     { "position": "background vocal", "name": "Jaclyn Russell" },
-    { "position": "background vocal", "name": "Michel Holmes" }
+    { "position": "lead vocal", "name": "Michel Holmes" }
   ],
   "audio": "//nebula.phx3.secureserver.net/d0bb359e918442ae081bcece2bf39874?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/135503384#t=78m58s",
@@ -1049,7 +1049,7 @@
     { "position": "electric guitar", "name": "Justin Hoeppner" },
     { "position": "percussion", "name": "Garett Puckett" },
     { "position": "piano", "name": "Todd Proctor" },
-    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "lead vocal", "name": "Lisa Proctor" },
     { "position": "lead vocal", "name": "Todd Proctor" }
   ],
   "audio": "//nebula.phx3.secureserver.net/830c410e4d625ee4e5be7874ffae7ff3?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -1371,8 +1371,8 @@
     { "position": "electric guitar", "name": "Justin Hoeppner" },
     { "position": "keys", "name": "Anthony Soza" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Michael Padilla" }
   ],
   "audio": "//nebula.phx3.secureserver.net/a8f6a4555c58aeac028a1a24bae13980?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -1557,7 +1557,7 @@
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "piano", "name": "Todd Proctor" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Todd Proctor" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
     { "position": "background vocal", "name": "Kelley Lorenz" },
     { "position": "background vocal", "name": "Leysa Kim" },
     { "position": "background vocal", "name": "Michael Padilla" }
@@ -2194,7 +2194,7 @@
     { "position": "drums", "name": "Kevin Reyes" },
     { "position": "keys", "name": "Rob Rinderer" },
     { "position": "bass guitar", "name": "Steve Commisso" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Elliot Howard" }
   ],
@@ -2426,7 +2426,7 @@
     { "position": "keys", "name": "Steve Commisso" },
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Angela Ivey" },
     { "position": "background vocal", "name": "Chris Hixson" }
   ],
@@ -2704,7 +2704,7 @@
     { "position": "keys", "name": "Rob Rinderer" },
     { "position": "woodwinds", "name": "Keith Felch" },
     { "position": "bass guitar", "name": "Norm Stockton" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Michael Padilla" }
   ],
@@ -2726,7 +2726,7 @@
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "background vocal", "name": "Gina Stockton" },
     { "position": "lead vocal", "name": "Dana DeBano" },
-    { "position": "background vocal", "name": "Michael Padilla" }
+    { "position": "lead vocal", "name": "Michael Padilla" }
   ],
   "audio": "//nebula.phx3.secureserver.net/e8de93e98bb455d6f8ae68cee0bc868e?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/120342736#t=27m19s",
@@ -2893,7 +2893,7 @@
     { "position": "keys", "name": "Gina Stockton" },
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "lead vocal", "name": "Dana DeBano" },
-    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "lead vocal", "name": "Michael Padilla" },
     { "position": "background vocal", "name": "Rosmarie Connell" }
   ],
   "audio": "//nebula.phx3.secureserver.net/64a9819fdba1a4157cfb0fa941a58a21?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -3341,7 +3341,7 @@
     { "position": "drums", "name": "Kevin Reyes" },
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "bass guitar", "name": "Tom Lanni" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "lead vocal", "name": "John Ivey" },
     { "position": "background vocal", "name": "Kelley Lorenz" },
     { "position": "background vocal", "name": "Michael Padilla" }
@@ -3804,7 +3804,7 @@
     { "position": "background vocal", "name": "Justin Hoeppner" },
     { "position": "background vocal", "name": "Gina Stockton" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Michael Padilla" }
   ],
   "audio": "//nebula.phx3.secureserver.net/6e5a72da10e68be112c02ab12dd19b00?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -3992,7 +3992,7 @@
     { "position": "keys", "name": "Rob Rinderer" },
     { "position": "background vocal", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Kelley Lorenz" },
     { "position": "background vocal", "name": "Michel Holmes" }
   ],
@@ -4033,7 +4033,7 @@
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "drums", "name": "Dave Owens" },
     { "position": "keys", "name": "Rob Rinderer" },
-    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "lead vocal", "name": "Brian Albright" },
     { "position": "background vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Kelley Lorenz" },
     { "position": "lead vocal", "name": "Michel Holmes" }
@@ -4292,7 +4292,7 @@
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "background vocal", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "background vocal", "name": "Mari Highleyman" }
   ],
   "audio": "//nebula.phx3.secureserver.net/2f9462d26f3987e89a165147ca17d152?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -4922,7 +4922,7 @@
     { "position": "woodwinds", "name": "Keith Felch" },
     { "position": "background vocal", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Gina Stockton" },
-    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "lead vocal", "name": "Michael Padilla" },
     { "position": "background vocal", "name": "Kelley Lorenz" }
   ],
   "audio": "//nebula.phx3.secureserver.net/43165ec840c7cae5731878064f2ddbd4?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -5111,7 +5111,7 @@
     { "position": "drums", "name": "Dave Owens" },
     { "position": "keys", "name": "Rob Rinderer" },
     { "position": "lead vocal", "name": "Gina Stockton" },
-    { "position": "background vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "John Ivey" },
     { "position": "background vocal", "name": "Chris Hixson" }
   ],
@@ -5334,7 +5334,7 @@
   "date": "2014-09-21",
   "band": [
     { "position": "acoustic guitar", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Gina Stockton" }
   ],
   "audio": "//nebula.phx3.secureserver.net/f73b0afcb2d9e1ac48bde05d5ec0c770?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -5673,7 +5673,7 @@
     { "position": "keys", "name": "Steve Commisso" },
     { "position": "keys", "name": "Greg Holmes" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "background vocal", "name": "Dana DeBano" }
   ],
   "audio": "//nebula.phx3.secureserver.net/2bc50d179452b728e4c5bb3daf9d36b7?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -5888,7 +5888,7 @@
     { "position": "drums", "name": "Kevin Reyes" },
     { "position": "keys", "name": "Rob Rinderer" },
     { "position": "woodwinds", "name": "Keith Felch" },
-    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
     { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "background vocal", "name": "Michael Padilla" },
     { "position": "background vocal", "name": "Rosmarie Connell" }
@@ -6062,7 +6062,7 @@
     { "position": "drums", "name": "Daniel Crane" },
     { "position": "keys", "name": "Tyler Ashman" },
     { "position": "lead vocal", "name": "Brian Albright" },
-    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "lead vocal", "name": "Michel Holmes" },
     { "position": "background vocal", "name": "Katie Ming" }
   ],
   "audio": "//nebula.phx3.secureserver.net/2bc3c04e76fc8c9d1d3e956e6781d35a?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
@@ -6182,7 +6182,7 @@
     { "position": "keys", "name": "Steve Commisso" },
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "lead vocal", "name": "Justin Hoeppner" },
-    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
     { "position": "background vocal", "name": "Elliot Howard" },
     { "position": "background vocal", "name": "Leysa Kim" }
   ],
@@ -6335,7 +6335,7 @@
     { "position": "keys", "name": "Steve Commisso" },
     { "position": "bass guitar", "name": "Norm Stockton" },
     { "position": "lead vocal", "name": "Gina Stockton" },
-    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "lead vocal", "name": "Colleen Stoop" },
     { "position": "background vocal", "name": "Elliot Howard" }
   ],
   "audio": "//nebula.phx3.secureserver.net/1e63d031dacb66919d51c42f15e79b2a?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
