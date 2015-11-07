@@ -57,6 +57,19 @@ var SearchSongs = React.createClass({
         </div>
         {this.renderLoading()}
         <div>{this.renderData()}</div>
+        <h3>Example searches:</h3>
+        <blockquote>
+          <dl>
+            <dt>norm corner</dt>
+            <dd>Songs containing "corner" that Norm has performed</dd>
+            <dt>loves acoustic</dt>
+            <dd>Songs containing "loves" in the acoustic style</dd>
+            <dt>lead: brian</dt>
+            <dd>Songs where Brian sings lead vocals</dd>
+            <dt>cello: erdis</dt>
+            <dd>Songs where Erdis plays cello</dd>
+          </dl>
+        </blockquote>
       </div>
     );
   },
