@@ -6944,6 +6944,7 @@
 },
 {
   "title": "Ever Yours",
+  "style": "acoustic",
   "date": "2015-11-01",
   "band": [
     { "position": "acoustic guitar", "name": "Jon Ivey" },
@@ -6955,10 +6956,110 @@
     { "position": "background vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Michel Holmes" }
   ],
-  "audio": "//nebula.phx3.secureserver.net/0a353aeadb6aaabe0aec98cb8d0a7c9d?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "audio": "//nebula.phx3.secureserver.net/a5ebcb4e775892131e98cd130c2accd4?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
   "video": "https://vimeo.com/144460994#t=83m29s",
   "planningCenter": {
     "plan": "https://planningcenteronline.com/plans/20909099",
     "arrangement": "https://planningcenteronline.com/arrangements/10836715"
+  }
+},
+{
+  "title": "Only King Forever",
+  "date": "2015-11-08",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Tyler Johnson" },
+    { "position": "bass guitar", "name": "Logan Post" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Tisa Colson" },
+    { "position": "background vocal", "name": "Chris Hixson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/ffd54d3bbc3dc80c39e8bc6dfffe1261?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/145102610#t=0m16s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909101",
+    "arrangement": "https://planningcenteronline.com/arrangements/8221689"
+  }
+},
+{
+  "title": "Christ Is Enough",
+  "date": "2015-11-08",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Tyler Johnson" },
+    { "position": "bass guitar", "name": "Logan Post" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Tisa Colson" },
+    { "position": "background vocal", "name": "Chris Hixson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/0489d083aea1db1a0f92ad15a257f8cd?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/145102610#t=4m49s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909101",
+    "arrangement": "https://planningcenteronline.com/arrangements/11050613"
+  }
+},
+{
+  "title": "Ever Yours",
+  "date": "2015-11-08",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Tyler Johnson" },
+    { "position": "bass guitar", "name": "Logan Post" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Tisa Colson" },
+    { "position": "background vocal", "name": "Chris Hixson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/5c403d0c86d62043be1bbb0b2304c83a?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/145102610#t=12m12s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909101",
+    "arrangement": "https://planningcenteronline.com/arrangements/10836715"
+  }
+},
+{
+  "title": "God I Look to You",
+  "date": "2015-11-08",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Tyler Johnson" },
+    { "position": "bass guitar", "name": "Logan Post" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Tisa Colson" },
+    { "position": "background vocal", "name": "Chris Hixson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/688296514958793196c52124ce4b81c8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/145102610#t=29m25s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909101",
+    "arrangement": "https://planningcenteronline.com/arrangements/3778342"
+  }
+},
+{
+  "title": "Great Are You Lord",
+  "date": "2015-11-08",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Tyler Johnson" },
+    { "position": "bass guitar", "name": "Logan Post" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Tisa Colson" },
+    { "position": "background vocal", "name": "Chris Hixson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/3b54c172e481b7383aff52af5dddfabd?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/145102610#t=82m6s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909101",
+    "arrangement": "https://planningcenteronline.com/arrangements/9850619"
   }
 }]
