@@ -1,6 +1,5 @@
 var React = require('react');
 var series = require('contra').series;
-var map = require('lodash/collection/map');
 var pluralize = require('pluralize')
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 
@@ -12,7 +11,7 @@ var Loading = require('./Loading.jsx');
 var SongListWidget= require('./SongListWidget.jsx');
 
 var SearchSongs = React.createClass({
-  
+
   mixins: [FluxibleMixin],
 
   statics: {

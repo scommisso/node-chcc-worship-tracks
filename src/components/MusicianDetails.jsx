@@ -1,6 +1,5 @@
 var React = require('react');
 var concurrent = require('contra').concurrent;
-var map = require('lodash/collection/map');
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongsByMusicianStore = require('../stores/SongsByMusicianStore');
 var PositionsByMusicianStore = require('../stores/PositionsByMusicianStore');

@@ -6,6 +6,7 @@ var Router = require('react-router');
 var Link = Router.Link;
 var SongStore = require('../stores/SongStore');
 var fetchSong = require('../actions/fetchSong');
+var AudioPlayer = require('./AudioPlayer.jsx');
 
 var SongDetails = React.createClass({
   contextTypes: {
@@ -76,11 +77,14 @@ var SongDetails = React.createClass({
 
   renderAudioLink: function(song) {
     if (!song.audio) { return ''; }
+    var title = song.title + this.getStyleString(song);
     return (
       <li className="list-group-item"><strong>Audio: </strong>
-        <a href={song.audio} title={song.title + this.getStyleString(song)} target="_blank">
-          {song.title + this.getStyleString(song)}
-        </a>
+          <AudioPlayer source={'http:' + song.audio} title={title} />
+          <a href={song.audio.replace('disposition=0', 'disposition=1')}
+            title={title} target="_blank">
+            (download)
+          </a>
       </li>
       );
   },

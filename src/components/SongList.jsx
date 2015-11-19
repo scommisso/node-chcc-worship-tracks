@@ -1,5 +1,4 @@
 var React = require('react');
-var map = require('lodash/collection/map');
 var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 var SongStore = require('../stores/SongStore');
 var fetchSongs = require('../actions/fetchSongs');

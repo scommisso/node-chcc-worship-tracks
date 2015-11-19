@@ -51,3 +51,8 @@ body {
 .panel-heading-collapse {
   cursor: hand;
 }
+
+li.list-group-item audio {
+  vertical-align: middle;
+  margin: 0 20px;
+}
