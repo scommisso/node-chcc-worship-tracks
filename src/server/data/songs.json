@@ -7505,4 +7505,80 @@
     "plan": "https://planningcenteronline.com/plans/20909175",
     "arrangement": "https://planningcenteronline.com/arrangements/3223499"
   }
+},
+{
+  "title": "The First Noel",
+  "date": "2015-12-13",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Kevin Reyes" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Tisa Colson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a2233cd89494753d34b2656520815a15?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/148972301#t=0m13s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909177",
+    "arrangement": "https://planningcenteronline.com/arrangements/7981401"
+  }
+},
+{
+  "title": "This Is Amazing Grace",
+  "date": "2015-12-13",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Kevin Reyes" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Tisa Colson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/f1d3a7530ecdb3e94aff8bbfff64de4c?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/148972301#t=6m19s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909177",
+    "arrangement": "https://planningcenteronline.com/arrangements/10369879"
+  }
+},
+{
+  "title": "O Come All Ye Faithful",
+  "date": "2015-12-13",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Kevin Reyes" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Tisa Colson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/01bd9463ba5113c573de30de4cf3199b?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/148972301#t=31m2s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909177",
+    "arrangement": "https://planningcenteronline.com/arrangements/1960332"
+  }
+},
+{
+  "title": "Good Good Father",
+  "date": "2015-12-13",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Kevin Reyes" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Tisa Colson" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/56e8885f16193c095d0b7e43aabb4de4?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/148972301#t=86m50s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909177",
+    "arrangement": "https://planningcenteronline.com/arrangements/10709905"
+  }
 }]
