@@ -6540,7 +6540,7 @@
     { "position": "background vocal", "name": "Michel Holmes" }
   ],
   "audio": "//nebula.phx3.secureserver.net/c71f80b307c20571d9bce1831dd3f8ab?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
-	  "video": "https://vimeo.com/141384177#t=91m10s",
+	  "video": "https://vimeo.com/141384177#t=81m37s",
   "planningCenter": {
     "plan": "https://planningcenteronline.com/plans/20909091",
     "arrangement": "https://planningcenteronline.com/arrangements/8131263"
@@ -7580,5 +7580,493 @@
   "planningCenter": {
     "plan": "https://planningcenteronline.com/plans/20909177",
     "arrangement": "https://planningcenteronline.com/arrangements/10709905"
+  }
+},
+{
+  "title": "Lay Me Down",
+  "date": "2015-12-20",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Drew Lehmann" },
+    { "position": "lead vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "background vocal", "name": "Colleen Stoop" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/7ee8dde032efe3693708bfd2618775d4?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/149731323#t=0m18s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909179",
+    "arrangement": "https://planningcenteronline.com/arrangements/11699249"
+  }
+},
+{
+  "title": "The First Noel",
+  "date": "2015-12-20",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Drew Lehmann" },
+    { "position": "lead vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "background vocal", "name": "Colleen Stoop" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/18b0838d36c177f821ea9a140459679c?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/149731323#t=5m23s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909179",
+    "arrangement": "https://planningcenteronline.com/arrangements/9688149"
+  }
+},
+{
+  "title": "Waiting Here for You",
+  "date": "2015-12-20",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Drew Lehmann" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "lead vocal", "name": "Colleen Stoop" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/8a14fe3e5cef916f81bc43a99f5ff081?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/149731323#t=22m1s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/11075063",
+    "arrangement": "https://planningcenteronline.com/arrangements/9688149"
+  }
+},
+{
+  "title": "Great Are You Lord",
+  "date": "2015-12-20",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Drew Lehmann" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "lead vocal", "name": "Colleen Stoop" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/572ba429c9cddc2d1e1a19d43700f809?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/149731323#t=70m37s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/11075063",
+    "arrangement": "https://planningcenteronline.com/arrangements/9688149"
+  }
+},
+{
+  "title": "Christ Is Enough",
+  "date": "2015-12-20",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "keys", "name": "Anthony Soza" },
+    { "position": "drums", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Drew Lehmann" },
+    { "position": "lead vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Michael Padilla" },
+    { "position": "background vocal", "name": "Colleen Stoop" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/364f6ec50ce3378a96965c9067acacfc?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/149731323#t=76m11s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909179",
+    "arrangement": "https://planningcenteronline.com/arrangements/11050613"
+  }
+},
+{
+  "title": "Angels We Have Heard On High",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "background vocal", "name": "Todd Proctor" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/ad7171fca9f138b8645ae9a93b40d147?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=0m32s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/12445529"
+  }
+},
+{
+  "title": "Mighty to Save",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/19fa4f8ff6e042b9b226ec7742de10d5?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=4m7s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/1823266"
+  }
+},
+{
+  "title": "Joyful (The One Who Saves)",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/bf79ae932675a3754f8a05a6c6689e01?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=10m45s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/3428928"
+  }
+},
+{
+  "title": "What Child Is This",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/faad1f00aed2b715c660374fb6d72f28?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=29m44s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/12626783"
+  }
+},
+{
+  "title": "Everything",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/c7c0685340ee0a319bbd70ba66244096?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=72m09s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/1706636"
+  }
+},
+{
+  "title": "From the Inside Out",
+  "date": "2015-12-27",
+  "band": [
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Todd Proctor" },
+    { "position": "organ", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "lead vocal", "name": "Todd Proctor" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Colleen Stoop" },
+    { "position": "background vocal", "name": "Elijah Young" },
+    { "position": "background vocal", "name": "Jaclyn Russell" },
+    { "position": "background vocal", "name": "Katie Ming" },
+    { "position": "background vocal", "name": "Kelley Lorenz" },
+    { "position": "background vocal", "name": "Lisa Proctor" },
+    { "position": "background vocal", "name": "Michel Holmes" },
+    { "position": "background vocal", "name": "Robert Ming" },
+    { "position": "background vocal", "name": "Rosmarie Connell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/f1e7fc4215b32ff9eb0589252644e799?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150400846#t=79m55s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/20909181",
+    "arrangement": "https://planningcenteronline.com/arrangements/1701202"
+  }
+},
+{
+  "title": "Little Drummer Boy",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "lead vocal", "name": "Brian Albright" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/691f58ae941c120587045e98ae248a9d?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=1m23s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/12487545"
+  }
+},
+{
+  "title": "Joy to the World",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/db59cd491e208feaf471fc7fcb146a37?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=5m4s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/12487569"
+  }
+},
+{
+  "title": "Angels We Have Heard on High",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "electric guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "lead vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/cea34c9359c681c5f94bcbbfdf7c5db9?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=8m4s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/9687851"
+  }
+},
+{
+  "title": "O Come, O Come Emmanuel",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/c26ba1c3866c64dd74adf9d80e86cdbf?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=17m31s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/9687931"
+  }
+},
+{
+  "title": "My Soul Magnifies",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/6d11600c26a0018a0481fa51a5ad6e34?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=25m44s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/9687931"
+  }
+},
+{
+  "title": "Oh Light",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/08793b15fefa8d91a93b2abe2174912b?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=37m6s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/12487839"
+  }
+},
+{
+  "title": "Here I Am to Worship",
+  "style": "acoustic",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Gina Stockton" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/5c84d61888f02f2166e225b8f9a2b576?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=55m54s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/4064621"
+  }
+},
+{
+  "title": "O Holy Night",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/9be8bbbd9b6524d7176a09723405e185?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=58m22s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/12487859"
+  }
+},
+{
+  "title": "O Come All Ye Faithful",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "electric guitar", "name": "Brian Albright" },
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "keys", "name": "Greg Holmes" },
+    { "position": "drums", "name": "Garett Puckett" },
+    { "position": "percussion", "name": "Jared Rodriguez" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "cello", "name": "Erdis Maxhelaku" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "lead vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/6478e74d7bfef922e87b6232e941ced2?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=64m20s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/1960332"
+  }
+},
+{
+  "title": "Silent Night",
+  "style": "acoustic",
+  "date": "2015-12-24",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Gina Stockton" },
+    { "position": "background vocal", "name": "Brian Albright" },
+    { "position": "background vocal", "name": "Jaclyn Russell" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/345d947dae506856ef5740e9a2e61318?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/150768366#t=70m55s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/21581423",
+    "arrangement": "https://planningcenteronline.com/arrangements/12487883"
   }
 }]
