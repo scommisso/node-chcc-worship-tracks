@@ -2929,7 +2929,8 @@
     { "position": "keys", "name": "Anthony Soza" },
     { "position": "keys", "name": "Gina Stockton" },
     { "position": "bass guitar", "name": "Norm Stockton" },
-    { "position": "lead vocal", "name": "Dana DeBano" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Dana DeBano" },
     { "position": "background vocal", "name": "Michael Padilla" },
     { "position": "background vocal", "name": "Rosmarie Connell" }
   ],
@@ -8068,5 +8069,100 @@
   "planningCenter": {
     "plan": "https://planningcenteronline.com/plans/21581423",
     "arrangement": "https://planningcenteronline.com/arrangements/12487883"
+  }
+},
+{
+  "title": "Only King Forever",
+  "style": "acoustic",
+  "date": "2016-01-31",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Dana DeBano" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a1c73eee0f666956e31d51889c4be4a8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/153864493#t=1m9s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/23106905",
+    "arrangement": "https://planningcenteronline.com/arrangements/8221689"
+  }
+},
+{
+  "title": "Forever Reign",
+  "style": "acoustic",
+  "date": "2016-01-31",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Dana DeBano" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a1c73eee0f666956e31d51889c4be4a8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/153864493#t=6m46s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/23106905",
+    "arrangement": "https://planningcenteronline.com/arrangements/2314282"
+  }
+},
+{
+  "title": "Spirit Would You Come",
+  "style": "acoustic",
+  "date": "2016-01-31",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" },
+    { "position": "background vocal", "name": "Dana DeBano" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a1c73eee0f666956e31d51889c4be4a8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/153864493#t=13m32s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/23106905",
+    "arrangement": "https://planningcenteronline.com/arrangements/9488339"
+  }
+},
+{
+  "title": "Ever Yours",
+  "style": "acoustic",
+  "date": "2016-01-31",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Justin Hoeppner" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a1c73eee0f666956e31d51889c4be4a8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/153864493#t=35m15s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/23106905",
+    "arrangement": "https://planningcenteronline.com/arrangements/10836715"
+  }
+},
+{
+  "title": "Good Good Father",
+  "style": "acoustic",
+  "date": "2016-01-31",
+  "band": [
+    { "position": "acoustic guitar", "name": "Justin Hoeppner" },
+    { "position": "electric guitar", "name": "Andy McCraw" },
+    { "position": "bass guitar", "name": "Norm Stockton" },
+    { "position": "drums", "name": "Dave Owens" },
+    { "position": "keys", "name": "Steve Commisso" },
+    { "position": "background vocal", "name": "Justin Hoeppner" },
+    { "position": "lead vocal", "name": "Dana DeBano" }
+  ],
+  "audio": "//nebula.phx3.secureserver.net/a1c73eee0f666956e31d51889c4be4a8?AccessKeyId=1E541C9AF9C95FD1AA1B&disposition=0&alloworigin=1",
+  "video": "https://vimeo.com/153864493#t=77m57s",
+  "planningCenter": {
+    "plan": "https://planningcenteronline.com/plans/23106905",
+    "arrangement": "https://planningcenteronline.com/arrangements/10709905"
   }
 }]
